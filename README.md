@@ -68,25 +68,6 @@ python collect.py
 🧪 Customization
 Want to scrape a different kind of page (e.g., phones, furniture, books)?
 
-🔧 Edit the logic in collect.py to:
-
-Change tag selectors (e.g., div, span)
-
-Match classes or IDs for different specs
-
-Add new columns or data points
-
-📁 Folder Structure
-bash
-Copy
-Edit
-webscrap/
-├── data/             # Folder containing input HTML files
-├── collect.py        # Main extraction script
-├── data.csv          # Output CSV (generated)
-└── README.md         # Project documentation
-
-
 
 📄 License
 This project is provided for educational and demonstration purposes.

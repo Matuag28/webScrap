@@ -50,7 +50,7 @@ The script collects:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/webscrap.git
+git clone https://github.com/Matuag28/webscrap.git
 cd webscrap
 2. Install Dependencies
 bash

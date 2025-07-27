@@ -1,68 +1,90 @@
-WebScrap: Automated HTML Data Extraction
-Overview
-This project automates the extraction of product information from a large collection of offline HTML files. It's designed to parse hundreds of saved product pages (such as laptops from an e-commerce site), extracting relevant details and compiling them into a single CSV dataset for easy analysis or further processing.
+🕸️ WebScrap: Automated HTML Data Extraction
+WebScrap is a Python-based project that automates data extraction from large collections of offline HTML files — perfect for scraping product data like laptops from e-commerce platforms. This tool enables you to process hundreds of saved product pages and generate clean, structured data in a single CSV file.
 
-Features
-Batch Processing: Works with entire directories of HTML files.
+✨ Features
+🔁 Batch Processing — Scans all HTML files in the data/ directory.
 
-Flexible Parsing: Uses Python and BeautifulSoup for robust extraction, accommodating minor page structure variations.
+🧠 Smart Parsing — Uses BeautifulSoup for flexible HTML traversal.
 
-Clean Output: Consolidates results into a single CSV (data.csv) with clearly labeled columns.
+📦 Clean Output — All results are saved in data.csv with structured columns.
 
-Extensible: Code is modular—easy to adapt for other types of listings or additional fields.
+🧩 Easily Extensible — Modular code; add or modify fields effortlessly.
 
-Core Workflow
-Input Data:
+⚙️ Core Workflow
+📥 Input
+Save your HTML product pages into the data/ folder.
+Example: hundreds of laptop listings.
 
-Place your HTML files in the data/ directory. The sample repository includes hundreds of HTML product pages.
-
-Run the Script:
-
-The primary script (collect.py) loads all HTML files, parses each for features like title, price, specifications, etc., and appends results to a CSV.
-
-Output:
-
-You’ll get a dataset file (data.csv) where each row contains the relevant information for one product.
-
-Field Extraction
-The script extracts fields such as:
-
-Product title
-
-Price
-
-Technical specs (RAM, storage, CPU, etc.)
-
-Seller or shop name
-
-Ratings and reviews
-
-Image links (if present)
-
-And any other attributes present in the HTML structure
-
-You can easily edit the script to add or remove fields as needed.
-
-How to Use
-Install dependencies
-
+🚀 Run the Script
 bash
-pip install beautifulsoup4
-Put HTML files into the data/ folder.
-
-Run the main script:
-
-bash
+Copy
+Edit
 python collect.py
-Find your results in data.csv
+The script will:
 
+Read every .html file
 
+Parse key information (title, specs, price, etc.)
 
+Save the extracted data into data.csv
 
-Customization
-To adapt to a new type of page (e.g., not laptops or with different HTML), edit the parsing sections in collect.py or use the helper scripts for experiments.
+🧠 Fields Extracted
+The script collects:
 
-License
-This project is for educational and demonstration purposes.
+🏷️ Product Title
 
-Feel free to adjust sections based on your specific extraction fields, description, or audience.
+💰 Price
+
+🧮 Specifications (RAM, Storage, CPU, etc.)
+
+🏬 Seller / Shop Name
+
+🌟 Ratings and Reviews
+
+🖼️ Image URLs (if available)
+
+💡 Want to extract more? You can easily update collect.py to include any tag or attribute.
+
+🛠️ Setup Instructions
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/webscrap.git
+cd webscrap
+2. Install Dependencies
+bash
+Copy
+Edit
+pip install beautifulsoup4
+3. Add HTML Files
+Place your .html files inside the data/ directory.
+
+4. Run the Extractor
+bash
+Copy
+Edit
+python collect.py
+🧪 Customization
+Want to scrape a different kind of page (e.g., phones, furniture, books)?
+
+🔧 Edit the logic in collect.py to:
+
+Change tag selectors (e.g., div, span)
+
+Match classes or IDs for different specs
+
+Add new columns or data points
+
+📁 Folder Structure
+bash
+Copy
+Edit
+webscrap/
+├── data/             # Folder containing input HTML files
+├── collect.py        # Main extraction script
+├── data.csv          # Output CSV (generated)
+└── README.md         # Project documentation
+📄 License
+This project is provided for educational and demonstration purposes.
+Feel free to use, modify, and share it with attribution.

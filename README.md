@@ -85,6 +85,9 @@ webscrap/
 ├── collect.py        # Main extraction script
 ├── data.csv          # Output CSV (generated)
 └── README.md         # Project documentation
+
+
+
 📄 License
 This project is provided for educational and demonstration purposes.
 Feel free to use, modify, and share it with attribution.
